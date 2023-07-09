@@ -18,7 +18,7 @@ body {
     font-size: 20px;
     position:fixed;
     top: 2%;
-    right: 75%;
+    right: 74%;
 }
 
 .content {
@@ -46,6 +46,7 @@ body {
     box-shadow: 0 0 5em yellow;
 }
 
+/* determines the tails */
 .earth,
 .moon,
 .mercury {
@@ -55,6 +56,7 @@ body {
     border-width: 0.1em 0.1em 0 0;
     border-radius: 50%;
 }
+
 .earth {
     top: 5em;
     left: 5em;
@@ -72,10 +74,10 @@ body {
 }
 
 .mercury {
-    top: 5em;
-    left: 5em;
-    width: 30em;
-    height: 30em;
+    top: 10em;
+    left: 10em;
+    width: 20em;
+    height: 20em;
     animation: orbit 6.5s linear infinite;
 }
 
@@ -104,8 +106,8 @@ body {
 }
 
 .mercury::before {
-    top: 8.4em;
-    right: 8.4em;
+    top: 2.4em;
+    right: 2.4em;
     width: 1.15em;
     height: 1.15em;
     background-color: gray;
