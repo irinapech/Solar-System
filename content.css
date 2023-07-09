@@ -52,7 +52,8 @@ body {
 .mercury,
 .venus,
 .mars,
-.jupiter {
+.jupiter,
+.saturn {
     position: absolute;
     border-style: solid;
     border-color: white transparent transparent transparent;
@@ -105,7 +106,15 @@ body {
     left: 0em;
     width: 40em;
     height: 40em;
-    animation: orbit 2s linear inifinte;
+    animation: orbit 120s linear infinite;
+}
+
+.saturn {
+    top:-2.5em;
+    left:-2.5em;
+    width: 45em;
+    height: 45em;
+    animation: orbit 220s linear infinite;
 }
 
 .earth::before,
@@ -113,7 +122,8 @@ body {
 .mercury::before,
 .venus::before,
 .mars::before,
-.jupiter::before {
+.jupiter::before,
+.saturn::before {
     content: '';
     position: absolute;
     border-radius: 50%;
@@ -161,11 +171,19 @@ body {
 }
 
 .jupiter::before {
-    top:3.6em;
+    top: 3.6em;
     right: 3.6em;
     width: 4em;
     height: 4em;
     background-color: rgb(141, 112, 75);
+}
+
+.saturn::before {
+    top:4em;
+    right: 4em;
+    width: 4.5em;
+    height: 4.5em;
+    background-color: beige;
 }
 
 /* .planet::before {
