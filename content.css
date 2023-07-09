@@ -1,3 +1,13 @@
+body {
+    margin: 0;
+    height: 50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
 .header {
     padding: 10px 50px 10px 50px;
     text-align: center;
