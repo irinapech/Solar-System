@@ -49,20 +49,15 @@ body {
 /* determines the tails */
 .earth,
 .moon,
-.mercury {
+.mercury,
+.venus,
+.mars,
+.jupiter {
     position: absolute;
     border-style: solid;
     border-color: white transparent transparent transparent;
     border-width: 0.1em 0.1em 0 0;
     border-radius: 50%;
-}
-
-.earth {
-    top: 5em;
-    left: 5em;
-    width: 30em;
-    height: 30em;
-    animation: orbit 36.5s linear infinite;
 }
 
 .moon {
@@ -78,23 +73,50 @@ body {
     left: 10em;
     width: 20em;
     height: 20em;
-    animation: orbit 6.5s linear infinite;
+    animation: orbit 9.5s linear infinite;
+}
+
+.venus {
+    top: 7.5em;
+    left: 7.5em;
+    width: 25em;
+    height: 25em;
+    animation: orbit 27.5s linear infinite;
+}
+
+.earth {
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+}
+
+.mars {
+    top:2.5em;
+    left: 2.5em;
+    width: 35em;
+    height: 35em;
+    animation: orbit 70s linear infinite;
+}
+
+.jupiter {
+    top: 0em;
+    left: 0em;
+    width: 40em;
+    height: 40em;
+    animation: orbit 2s linear inifinte;
 }
 
 .earth::before,
 .moon::before,
-.mercury::before {
+.mercury::before,
+.venus::before,
+.mars::before,
+.jupiter::before {
     content: '';
     position: absolute;
     border-radius: 50%;
-}
-
-.earth::before {
-    top: 2.8em;
-    right: 2.8em;
-    width: 3em;
-    height: 3em;
-    background-color: aqua;
 }
 
 .moon::before {
@@ -106,12 +128,52 @@ body {
 }
 
 .mercury::before {
-    top: 2.4em;
-    right: 2.4em;
-    width: 1.15em;
-    height: 1.15em;
+    top: 2em;
+    right: 2em;
+    width: 1.6em;
+    height: 1.6em;
     background-color: gray;
 }
+
+/* this is set, do not touch it */
+.venus::before {
+    top: 2.4em;
+    right: 2.4em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: orange;
+}
+
+.earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;
+}
+
+.mars::before {
+    top: 3.2em;
+    right: 3.2em;
+    width: 3.5em;
+    height: 3.5em;
+    background-color: rgb(195, 169, 122);
+}
+
+.jupiter::before {
+    top:3.6em;
+    right: 3.6em;
+    width: 4em;
+    height: 4em;
+    background-color: rgb(141, 112, 75);
+}
+
+/* .planet::before {
+    top: 
+    right:
+    width: size of the planet
+    height: size of the planet
+} */
 
 @keyframes orbit {
    to {
