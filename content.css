@@ -163,10 +163,10 @@ body {
 }
 
 .mars::before {
-    top: 3.2em;
-    right: 3.2em;
-    width: 3.5em;
-    height: 3.5em;
+    top: 3.7em;
+    right: 3.7em;
+    width: 2.5em;
+    height: 2.5em;
     background-color: rgb(195, 169, 122);
 }
 
