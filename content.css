@@ -26,13 +26,12 @@ body {
 }
 
 .header {
-    border: 1px solid yellow;
     width: auto;
     height: 10vh;
 }
 
 .information {
-    border: 1px solid yellow;
+    border: 1px solid white;
     width: auto;
     height: 80vh;
 }
