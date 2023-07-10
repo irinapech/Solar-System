@@ -1,44 +1,53 @@
-body {
+* {
     margin: 0;
-    height: 50vh;
-    display:flex;
-    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
     justify-content: center;
-    background-color: black;
-    overflow: hidden;
+    color: #fff;
+    background-color:  #5995DA;
+    padding: 20px 0;
+    height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid #fff;
+    width: 400px;
+    background-color: green;
 }
 
 .header {
-    padding: 10px 50px 10px 50px;
-    text-align: center;
-    color: yellow;
-    background-image: url(images/stars-header-backgound.jpg);
-    border-radius: 50%;
-    border: 5px solid yellow;
-    font-size: 20px;
-    position:fixed;
-    top: 2%;
-    right: 74%;
+    border: 1px solid yellow;
+    width: auto;
+    height: 10vh;
+}
+
+.information {
+    border: 1px solid yellow;
+    width: auto;
+    height: 80vh;
 }
 
 .content {
-    font-size: 10px;
-    width: 40em;
-    height: 40em;
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    /* border:10px solid whitesmoke; */
-    /* border-radius: 50%; */
-    /* border-width: 0.1em 0.1em 0.1em 0.1em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    width: 900px;
+    background-color: red;
 }
 
+/* Planets */
 .sun {
-    position: absolute;
-    top: 15em;
-    left: 15em;
+    /* position: relative; */
+    /* top: 15em; */
+    /* left: 15em; */
     width: 10em;
     height: 10em;
     background-color: yellow;
@@ -54,7 +63,7 @@ body {
 .mars,
 .jupiter,
 .saturn {
-    position: absolute;
+    position:absolute;
     border-style: solid;
     border-color: white transparent transparent transparent;
     border-width: 0.1em 0.1em 0 0;
@@ -145,7 +154,6 @@ body {
     background-color: gray;
 }
 
-/* this is set, do not touch it */
 .venus::before {
     top: 2.4em;
     right: 2.4em;
@@ -186,19 +194,8 @@ body {
     background-color: beige;
 }
 
-/* .planet::before {
-    top: 
-    right:
-    width: size of the planet
-    height: size of the planet
-} */
-
-@keyframes orbit {
+/* @keyframes orbit {
    to {
         transform: rotate(360deg);
     }
-}
-
-a {
-    color: yellow;
-}
+} */
