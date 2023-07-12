@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
+    flex: initial;
     flex-direction: column;
     /* border: 1px solid #fff; */
     width: 400px;
@@ -32,6 +33,7 @@ body {
     width: auto;
     height: 20vh;
     overflow: auto;
+    justify-content: space-between;
     padding: 10px 50px 10px 50px;
     text-align: center;
     color: yellow;
@@ -40,6 +42,11 @@ body {
     /* border: 5px solid yellow; */
     font-size: 20px;
     /* position: fixed; */
+}
+
+.main-header, .small-header {
+    /* height: 150px; */
+    flex: 1;
 }
 
 .information {
@@ -64,6 +71,22 @@ body {
     width: auto;
     height: 3vh;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  .footer-three {
+    flex: 2;
+  }
 
 .content {
     display: flex;
