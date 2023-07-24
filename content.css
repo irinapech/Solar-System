@@ -27,6 +27,9 @@ body {
     flex-direction: column;
     width: 400px;
     gap: 2px;
+    position: fixed;
+    top:auto;
+    left: 0;
 }
 
 .header {
@@ -38,7 +41,7 @@ body {
     padding: 10px 50px 10px 50px;
     text-align: center;
     color: yellow;
-    background-image: url(images/stars-header-backgound.jpg);
+    /* background-image: url(images/stars-header-backgound.jpg); */
     font-size: 20px;
 }
 
@@ -53,6 +56,14 @@ body {
     overflow: auto;
 }
 
+.information > li {
+    margin-bottom: 30px;
+}
+
+.information > li:last-of-type {
+    margin-bottom: 0;
+}
+
 .hide {
     display: none;
 }
@@ -65,11 +76,15 @@ body {
 .header-information {
     text-decoration: none;
     color: white;
-    transition: font-weight 1s;
+    font-size: 32px;
+    cursor: pointer;
+    transition-duration: 0.3s;
 }
 
 .header-information:hover {
-    font-weight: lighter;
+    color: gold;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 .footer {
@@ -83,6 +98,9 @@ body {
     overflow: hidden;
     align-items: center;
     width: 900px;
+    position: relative;
+    top: 0;
+    left: 200px;
 }
 
 .planets {
