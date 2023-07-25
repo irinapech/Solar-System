@@ -28,7 +28,7 @@ body {
     width: 400px;
     gap: 2px;
     position: fixed;
-    top:auto;
+    top: auto;
     left: 0;
 }
 
@@ -45,7 +45,8 @@ body {
     font-size: 20px;
 }
 
-.main-header, .small-header {
+.main-header,
+.small-header {
     flex: 1;
 }
 
@@ -59,12 +60,12 @@ body {
     align-items: center;
 }
 
-.information > li {
+.information>li {
     margin-bottom: 30px;
     list-style-type: none;
 }
 
-.information > li:last-of-type {
+.information>li:last-of-type {
     margin-bottom: 0;
 }
 
@@ -85,7 +86,7 @@ body {
     font-size: 32px;
     cursor: pointer;
     transition-duration: 0.8s;
-    width:fit-content;
+    width: fit-content;
 }
 
 .header-information:hover {
@@ -96,12 +97,35 @@ body {
 
 strong {
     font-weight: bold;
-    color:chocolate;
+    color: chocolate;
 }
 
 .footer {
     width: auto;
     height: 3vh;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: chocolate;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: gold;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: gold;
+    font-weight: 300px;
 }
 
 .content {
