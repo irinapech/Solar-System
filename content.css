@@ -105,27 +105,16 @@ strong {
     height: 3vh;
 }
 
-a:link {
+a:link,
+a:visited {
     color: white;
     background-color: transparent;
-    text-decoration: none;
-}
-
-a:visited {
-    color: chocolate;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:active {
-    color: gold;
-    background-color: transparent;
-    text-decoration: underline;
+    text-decoration: white;
 }
 
 a:hover {
     color: gold;
-    font-weight: 300px;
+    text-decoration: underline;
 }
 
 .content {
