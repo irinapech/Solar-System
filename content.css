@@ -54,10 +54,14 @@ body {
     height: 70vh;
     text-align: center;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .information > li {
     margin-bottom: 30px;
+    list-style-type: none;
 }
 
 .information > li:last-of-type {
@@ -66,6 +70,8 @@ body {
 
 .hide {
     display: none;
+    text-align: justify;
+    padding: 10px;
 }
 
 .header-information:hover+.hide {
@@ -78,13 +84,19 @@ body {
     color: white;
     font-size: 32px;
     cursor: pointer;
-    transition-duration: 0.3s;
+    transition-duration: 0.8s;
+    width:fit-content;
 }
 
 .header-information:hover {
-    color: gold;
+    color: chocolate;
     font-weight: bold;
     margin-bottom: 0;
+}
+
+strong {
+    font-weight: bold;
+    color:chocolate;
 }
 
 .footer {
